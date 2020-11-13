@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2\\Task_2.csproj": {}
+    "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2\\Task_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj": {
+    "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
         "projectName": "Task_2.Engine",
-        "projectPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
+        "projectPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2\\Task_2.csproj": {
+    "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2\\Task_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2\\Task_2.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2\\Task_2.csproj",
         "projectName": "Task_2",
-        "projectPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2\\Task_2.csproj",
+        "projectPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2\\Task_2.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj": {
-                "projectPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj"
+              "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj": {
+                "projectPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj"
               }
             }
           }

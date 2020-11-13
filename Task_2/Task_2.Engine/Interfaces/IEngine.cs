@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MainEngine.Interfaces
 {
-    public interface IDrawable
+    public interface IEngine
     {
         int Run();
     }

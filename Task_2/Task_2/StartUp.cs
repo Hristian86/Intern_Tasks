@@ -13,7 +13,7 @@ namespace Task_2
         {
             IReadable reader = new Input();
             IWriteable write = new Display();
-            IDrawable engine = new EngineInit(reader.GetNumber());
+            IEngine engine = new EngineInit(reader.GetNumber());
             write.Print(engine.Run());
         }
     }

@@ -5,7 +5,7 @@ using MainEngine.Interfaces;
 
 namespace Task_2.Engine.Core
 {
-    public class EngineInit : IDrawable
+    public class EngineInit : IEngine
     {
         private EngineCore engineCore;
 

@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
+      "projectUniqueName": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
       "projectName": "Task_2.Engine",
-      "projectPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
+      "projectPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\Task_2.Engine.csproj",
       "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pencho\\source\\repos\\Task_2\\Task_2.Engine\\obj\\",
+      "outputPath": "G:\\FilesForGithub\\Intern_Tasks\\Task_2\\Task_2.Engine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
