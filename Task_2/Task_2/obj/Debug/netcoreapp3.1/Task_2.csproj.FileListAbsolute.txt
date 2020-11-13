@@ -1,0 +1,14 @@
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.exe
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.deps.json
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.runtimeconfig.json
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.runtimeconfig.dev.json
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.dll
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.pdb
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.AssemblyInfoInputs.cache
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.AssemblyInfo.cs
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.dll
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.pdb
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.Engine.dll
+C:\Users\Pencho\source\repos\Task_2\Task_2\bin\Debug\netcoreapp3.1\Task_2.Engine.pdb
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.csprojAssemblyReference.cache
+C:\Users\Pencho\source\repos\Task_2\Task_2\obj\Debug\netcoreapp3.1\Task_2.csproj.CopyComplete
