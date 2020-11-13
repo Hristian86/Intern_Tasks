@@ -8,7 +8,7 @@ namespace Task_2.Engine.Core
     {
         private int calculateNextYear;
 
-        public EngineCore(int year)
+        internal EngineCore(int year)
         {
             this.calculateNextYear = year;
         }
@@ -31,7 +31,6 @@ namespace Task_2.Engine.Core
                 {
                     return this.calculateNextYear;
                 }
-
             }
         }
 
@@ -39,10 +38,10 @@ namespace Task_2.Engine.Core
         {
             for (int i = 0; i < nextYearToString.Length; i++)
             {
-                int currentNumber = int.Parse(nextYearToString[i].ToString());
+                int currentNumber = nextYearToString[i];
                 for (int j = i + 1; j < nextYearToString.Length; j++)
                 {
-                    int checkingYear = int.Parse(nextYearToString[j].ToString());
+                    int checkingYear = nextYearToString[j];
                     if (checkingYear == currentNumber)
                     {
                         return false;
