@@ -31,45 +31,39 @@ public class StartUp: IMain {
     public func Main() -> Void {
         // Start to code here.
         let display = Calculate(1864930450);
-        let resultNumber = Int(display) ?? 0;
-        print(resultNumber);
+        print(display);
     }
 
-    
-    func Calculate(_ number: Int) -> String {
+    func Calculate(_ number: Int) -> Int {
         var tempNumber = number;
         var numbers = [0,0,0,0,0,0,0,0,0,0];
 
         while tempNumber > 0 {
             let lastNum = tempNumber % 10;
             numbers[lastNum] += 1;
-
             tempNumber /= 10;
         }
         
-        var toBeDisplayed = Array<Int>();
+        // var toBeDisplayed = Array<Int>();
         // String result
         var displs: String = "";
+
         // Reversed numbers.
         for i in 0..<numbers.count {
-            // print(numbers[numbers.count - i - 1]);
-            
             if numbers[numbers.count - i - 1] > 0 {
-                var res = numbers[numbers.count - i - 1] * (numbers.count - i - 1)
+                var res = numbers.count - i - 1;
                 var countOfNumbers = numbers[numbers.count - i - 1];
                 if countOfNumbers > 1 {
                     while countOfNumbers != 0 {
-                        toBeDisplayed.append(res);
                         displs += String(res);
                         countOfNumbers -= 1;
                     }
                 } else {
                     displs += String(res);
-                    toBeDisplayed.append(res);
                 }
             }
         }
-        return displs;
+        return Int(displs) ?? 0;
     }    
 }
 
