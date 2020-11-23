@@ -13,30 +13,37 @@ public class StartUp:IMain {
     // ""              ==>  "" (edited) 
 
     public func Main() -> Void {
-        var sentance: String = "#######";
+        var sentance: String = "abc##d######";
         let result = Filter(sentance);
-        print("\"\(sentance)\" => \"\(result)\"")
+        print("\"\(sentance)\" => \"\(result)\"");
     }
 
     public func Filter(_ sentance: String) -> String {
         var chararray = Array(sentance);
 
         while chararray.contains("#") {
+
             if chararray.count == 1 {
                 return "";
             }
             
             for i in 0..<chararray.count {
-
-                if ((i < chararray.count - 1) && (chararray[i + 1] == "#"))  {
-                    chararray.remove(at: i + 1);
-                    chararray.remove(at: i);
-                    break;
+                if chararray[0] == "#" {
+                    chararray.remove(at: 0);
+                } else {
+                    if ((i < chararray.count - 1) && (chararray[i + 1] == "#"))  {
+                        chararray.remove(at: i + 1);
+                        chararray.remove(at: i);
+                        break;
+                    }
                 }
-                
             }
 
         }
+        
+        // if chararray[0] == "#" {
+        //     chararray.remove(at: 0);
+        // }
         
         return String(chararray);        
     }
