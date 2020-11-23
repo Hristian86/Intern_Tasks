@@ -3,15 +3,6 @@ protocol IMain {
 }
 
 public class StartUp: IMain {
-
-// You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
-// The value of d will always be 0 - 9.
-// The value of x will always be greater than 0.
-// You have to return as an array
-// the count of these numbers,
-// their sum
-// and their product.
-
 // Evgeni Milev12:00 PM
 // Given a number , Return _The Maximum number _ could be formed from the digits of the number given .
 // Only Natural numbers passed to the function , numbers Contain digits [0:9] inclusive
@@ -37,21 +28,20 @@ public class StartUp: IMain {
     func Calculate(_ number: Int) -> Int {
         var tempNumber = number;
         var numbers = [0,0,0,0,0,0,0,0,0,0];
+        // var toBeDisplayed = Array<Int>();
+        // String result
+        var displs: String = "";
 
         while tempNumber > 0 {
             let lastNum = tempNumber % 10;
             numbers[lastNum] += 1;
             tempNumber /= 10;
         }
-        
-        // var toBeDisplayed = Array<Int>();
-        // String result
-        var displs: String = "";
 
         // Reversed numbers.
         for i in 0..<numbers.count {
             if numbers[numbers.count - i - 1] > 0 {
-                var res = numbers.count - i - 1;
+                let res = numbers.count - i - 1;
                 var countOfNumbers = numbers[numbers.count - i - 1];
                 if countOfNumbers > 1 {
                     while countOfNumbers != 0 {
