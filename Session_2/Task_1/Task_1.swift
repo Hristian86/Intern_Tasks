@@ -3,9 +3,6 @@ protocol IMain {
 }
 
 public class StartUp: IMain {
-// Evgeni Milev12:00 PM
-// Given a number , Return _The Maximum number _ could be formed from the digits of the number given .
-// Only Natural numbers passed to the function , numbers Contain digits [0:9] inclusive
 
 // Digit Duplications could occur , So also consider it when forming the Largest
 // As 321 is _The Maximum number _ could be formed from the digits of the number *213*** .
@@ -13,10 +10,8 @@ public class StartUp: IMain {
 // As 9873 is _The Maximum number _ could be formed from the digits of the number *7389*** .
 // maxNumber (213) ==> return (321)
 // Velina Tsivneva12:18 PM
-// .sorted(by:>) 
-// Evgeni Milev12:18 PM
+// .sorted(by:>)
 // let reversed1 = Array(numbers.sorted().reversed())
-// Evgeni Milev12:26 PM
 // for (index, element) in list.enumerated() 
 
     public func Main() -> Void {
