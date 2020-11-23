@@ -41,10 +41,6 @@ public class StartUp:IMain {
 
         }
         
-        // if chararray[0] == "#" {
-        //     chararray.remove(at: 0);
-        // }
-        
         return String(chararray);        
     }
     
