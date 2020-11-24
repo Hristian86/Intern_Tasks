@@ -21,8 +21,10 @@ func LongestSecuence() -> [Int] {
                 key = arr[i];
             }
         }
+
         count = 1;
     }
+
     var dispArr = Array(repeating: key, count: value );
     return dispArr;
 }

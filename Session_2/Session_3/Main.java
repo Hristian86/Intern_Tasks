@@ -11,16 +11,53 @@ public class Main {
     
     public static void main(String[] args) {
         // ArraySorting();
-        var arr = new int[]{1, 1, 3, 8, 12, 2, 2, 2, 4, 7, 7};
-        var result = findSequence(arr, arr.length);
-        System.out.println(result);
+        var arr = new int[]{2,3,5,3,7,9,5,3,7};
+        // var result = 
+        // ArraySorting();
+        // System.out.println(result);
+        sortByCount(arr);
     }
+    public static void sortByCount(int [] arr) {
+        //  int[] arr = {2, 3, 5, 3, 7, 9, 5, 3, 7};
+          int maxElement = Integer.MIN_VALUE;
+          for (int i = 0; i < arr.length; i++) {
+              if (arr[i] > maxElement) {
+                  maxElement = arr[i];
+              }
+          }
+          int secondMax = Integer.MIN_VALUE;
+  
+          int[] secondArr = new int[maxElement+1];
+          for (int i = 0; i < arr.length; i++) {
+              secondArr[arr[i]] +=1;
+              if (secondArr[arr[i]] > secondMax){
+                  secondMax = secondArr[arr[i]];
+              }
+          }
+  
+          for (int i = secondMax; i >= 1 ; i--) {
+              for (int j = 0; j < secondArr.length; j++) {
+                  int number = secondArr[j];
+                  if (number != 0 && (number == i)) {
+                      while (number > 0) {
+                          System.out.print(j + " ");
+                          number -= 1;
+                      }
+                  }
+              }
+          }
+      }
 
     public static void ArraySorting() {
         var arr = new int[]{2,3,5,3,7,9,5,3,7};
+        var arr2 = new int[arr.length];
+        
         // var arr = new int[]{2,1,2};
         var result = new int[arr.length];
         var count = 0;
+        var k = 0;
+        var key = 0;
+        var value = 0;
     
         for (int i = 0; i < arr.length; i++) {
             var temp = arr[i];
@@ -31,6 +68,24 @@ public class Main {
                     minIndex = j;
                 }
             }
+
+            k = i + 1;
+        
+            while ( k < arr.length && arr[k] == arr[i] ) {
+                k += 1;
+                count += 1;
+                if (value < count) {
+                    value = count;
+                    key = arr[i];
+                }
+            }
+
+            // if (count == 2) {
+            //     arr[minIndex] = temp;
+            //     arr[arr.length - 1] = arr[i];
+            // }
+
+            count = 1;
 
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
