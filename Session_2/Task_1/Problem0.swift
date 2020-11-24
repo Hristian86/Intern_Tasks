@@ -39,7 +39,7 @@ public class StartUp {
 
             while tempNumberFromRange > 0 {
                     
-                if tempNumberFromRange % 10 == searchNum && !array.contains(i) {
+                if tempNumberFromRange % 10 == searchNum && array[array.count - 1] != i {
                     array.append(i);
                 }
 

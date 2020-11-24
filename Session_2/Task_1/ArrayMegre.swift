@@ -12,11 +12,11 @@ public class StartUp:IMain {
     // Main function.
     public func Main() -> Void {
         // Here are the two arrays.
-        var arrOne = [1,3,5,7,9,11,12,14];
-        var arrTwo = [2,4,6,8,10,13,15];
+        var arr1 = [1,3,5,7,9,11,12,14];
+        var arr2 = [2,4,6,8,10,13,15];
 
-        var arr1 = Sorting(arrOne);
-        var arr2 = Sorting(arrTwo);        
+        arr1 = Sorting(arr1);
+        arr2 = Sorting(arr2);        
 
         var result = SortedArray(arr1, arr2);
         print(result)
@@ -24,9 +24,24 @@ public class StartUp:IMain {
 
     // Here is the merge.
     private func SortedArray(_ arr1: [Int], _ arr2: [Int]) -> [Int] {   
-        var returnArrays = arr1 + arr2;
-        var result = Sorting(returnArrays);
-        return result;
+        var maxLength: Int = MathMin(arr1.count, arr2.count);
+        var returnArrays = Array<Int>();
+        
+        for i in 0...maxLength {
+
+            if i < arr1.count {
+                returnArrays.append(arr1[i]);        
+            }
+
+            if i < arr2.count {
+                returnArrays.append(arr2[i]);
+            }
+
+        }
+
+        returnArrays = Sorting(returnArrays);
+
+        return returnArrays;
     }
 
     // Insertion sorting.
@@ -45,15 +60,19 @@ public class StartUp:IMain {
         return arr;
     }
 
+    private func MathMax<T>(_ x: T, _ y: T) -> T where T : Comparable {
+        if x > y {
+            return x;
+        } 
+        return y;
+    }
+
     // Not usable.
     private func MathMin<T>(_ x: T, _ y: T) -> T where T : Comparable {
         if x < y {
             return x;
-        } else if(x > y){
-            return y;
-        } else {
-            return x;
-        }
+        } 
+        return y;
     }
 }
 
