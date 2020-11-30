@@ -1,3 +1,5 @@
+import java.util.LinkedHashMap;
+
 /**
  * Main
  */
@@ -11,12 +13,24 @@ public class Main {
     
     public static void main(String[] args) {
         // ArraySorting();
-        var arr = new int[]{2,3,5,3,7,9,5,3,7};
         // var result = 
         // ArraySorting();
         // System.out.println(result);
-        sortByCount(arr);
-    }
+        // sortByCount(arr);
+        var arr = new int[]{2,3,5,3,7,9,5,3,7,2,7,8,9,1};
+        var treeMap = new LinkedHashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            if (!treeMap.containsValue(arr[i])) {   
+                treeMap.putIfAbsent(i, arr[i]);
+            }
+        }
+
+        for (var item : treeMap.values()) {
+            System.out.print(item + " ");
+        }
+    }    
+    
     public static void sortByCount(int [] arr) {
         //  int[] arr = {2, 3, 5, 3, 7, 9, 5, 3, 7};
           int maxElement = Integer.MIN_VALUE;
@@ -46,6 +60,7 @@ public class Main {
                   }
               }
           }
+          System.out.println();
       }
 
     public static void ArraySorting() {
