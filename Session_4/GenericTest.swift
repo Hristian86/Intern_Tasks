@@ -36,19 +36,15 @@ public class Person {
     }
 }
 
-public class Address<T> {
+internal class Address<T> {
     private var address = Array<T>();
 
     init() {}
-    public func AddUserToCity(_ user: T) {
-
-    }
-
-    public func GetCity(_ defaultAddress: Int) -> T? {
+    internal func GetCity(_ defaultAddress: Int) -> T? {
         return self.address[defaultAddress] ?? nil;
     }
     
-    public func AddCity(_ city: T) -> Int {
+    internal func AddCity(_ city: T) -> Int {
         self.address.append(city);
         return self.address.count
     }
@@ -59,16 +55,20 @@ public class UserService {
     
     init() {}
     public func AddPerson(_ person: Person) {
-        AddtoColl(person);
+        InsertPerson(person);
     }
 
-    private func AddtoColl(_ person: Person) {
-        var city: String = person.GetCity();
-        let keyExists = self.userRepository[city] != nil
+    private func InsertPerson(_ person: Person) {
 
-        if !keyExists {
+        // Adding to dictionary.
+        var city: String = person.GetCity();
+        let cityExists = self.userRepository[city] != nil
+
+        if !cityExists {
+            // Initial state of a given city.
             self.userRepository[city] = [person];
         } else {
+            // Update the collection of Persons.
             var ppl = self.userRepository[city] ?? [];
             ppl.append(person);
             self.userRepository.updateValue(ppl, forKey: city);
@@ -79,9 +79,9 @@ public class UserService {
         for city in self.userRepository.sorted(by: { $0.key < $1.key }) {
             // Prints the city.
             print(city.key)
-            for name in city.value.sorted(by: { $0.GetName() < $1.GetName() }) {
-                // Prints the name of the Persons.
-                print("   \(name.GetName())")
+            for peopleFormCity in city.value.sorted(by: { $0.GetName() < $1.GetName() }) {
+                // Prints the names of the Persons.
+                print("   \(peopleFormCity.GetName())")
             }
         }
     }
@@ -92,8 +92,6 @@ userService.AddPerson(Person("Иван","София"));
 userService.AddPerson(Person("Петър","Пловдив"));
 userService.AddPerson(Person("Никола","София"));
 userService.AddPerson(Person("Деница","Варна"));
-userService.AddPerson(Person("Пенчо","Враца"));
-userService.AddPerson(Person("Генчо","Пловдив"));
-userService.AddPerson(Person("Тодор","София"));
 userService.AddPerson(Person("Жельо","Пловдив"));
+userService.AddPerson(Person("Жельо","София"));
 userService.PrintPeaople();
